@@ -6,8 +6,7 @@ RUN apt-get update && apt-get install -y \
     git
 
 # Install Python dependencies
-RUN pip3 install --upgrade pip  # Upgrade pip to the latest version
-RUN pip3 install pyYAML
+RUN pip3 install pyYAML --verbose
 
 # Verify Python and pip installation
 RUN python3 --version
